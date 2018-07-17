@@ -18,6 +18,11 @@ $(document).ready(function(){
         $(".button-toggle_text").toggleClass("toggle");
     });
 
+    //Closing menu after clicking on a link
+    $( '.mobile-menu a' ).on("click", function(){
+      $('.mobile-menu').toggle("slow", "linear");
+    });
+
     //Smooth anchor moving
     $("#desctop-menu, #mobile-menu").on("click","a", function (event) {
        event.preventDefault();
@@ -56,7 +61,6 @@ $(document).ready(function(){
     //Changing phone value on click 
     $('.input-phone').click(function(){
       $(this).val('+380');
-      /*$('#total').text('Product price: $2000');*/
     });
 
 });
