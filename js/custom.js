@@ -13,7 +13,7 @@ $(document).ready(function(){
 
     //Toggle menu with animation
     $(".button-toggle").click(function(){
-        $(".menu").toggle("slow", "linear");
+        $(".mobile-menu").toggle("slow", "linear");
         $(".toggle-line").toggleClass("toggle");
         $(".button-toggle_text").toggleClass("toggle");
     });
