@@ -18,9 +18,10 @@ $(document).ready(function(){
         $(".button-toggle_text").toggleClass("toggle");
     });
 
-    //Closing menu after clicking on a link
-    $( '.mobile-menu a' ).on("click", function(){
-      $('.mobile-menu').toggle("slow", "linear");
+    //Closing menu after click on link
+     $(".mobile-menu a").on("click", function(){
+        $('.mobile-menu').toggle("slow", "linear");
+        $(".toggle-line").toggleClass("toggle");
     });
 
     //Smooth anchor moving
