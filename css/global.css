@@ -164,6 +164,7 @@ p {
 }
 
 /* common elements */
+
 a:hover,
 a:active,
 a:focus,
@@ -305,10 +306,9 @@ button:focus{
 }
 
 .header-block { 
-  /* height: 90px; */
-  margin: 0 auto;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  height: 90px;
+  margin-left: auto;
+  margin-right: auto;
   z-index: 10;
 }
 
@@ -325,10 +325,6 @@ button:focus{
 .croner-logo {
   height: 33px;
   width: 200px;
-}
-
-.header-nav {
-  background: white;
 }
 
 .header-nav ul { 
@@ -364,7 +360,6 @@ button:focus{
 .header-callback .callback-number {
   display: inline-block;
   margin-right: 10px;
-  color: rgb(23,24,56);
 }
 
 .header-callback .callback-logo { 
@@ -411,6 +406,18 @@ button:focus{
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
  .fixed-header + .main {
   padding-top: 102px;
+}
+
+.mobile-menu { 
+  display: none;
+}
+
+.mobile-menu a {
+  color: rgb(119,119,140);
+}
+
+ .mobile-menu a:hover {
+  color: rgb(57,191,162);
 }
 
 /* Menu toggle styling*/
@@ -460,7 +467,7 @@ button:focus{
   color: rgb(23,24,56);
   font-weight: 500;
   font-size: 15px;
-  padding-right: 16px;
+  padding-left: 16px;
 }
 
 .toggle.button-toggle_text {
@@ -1306,7 +1313,6 @@ button[type='submit']:hover .icon-cellphone svg path {
 }
 
 @media (min-width: 960px) and (max-width: 1199px) {
-
   .croner-logo {
     height: 20px;
     width: 130px;
@@ -1449,10 +1455,6 @@ button[type='submit']:hover .icon-cellphone svg path {
 }
 
 @media (min-width: 720px) and (max-width: 959px) {
-   .header-block {
-    padding-bottom: 0;
-  }
-
   .croner-logo {
     height: 20px;
     width: 130px;
@@ -1460,31 +1462,31 @@ button[type='submit']:hover .icon-cellphone svg path {
 
   .button-toggle {
     align-items: center;
-    display: flex;
-    flex-direction: row-reverse;     
-  }
-  
-  .header-nav {
-    margin-top: 30px;
+    display: flex;     
   }
 
-  .menu {
-    display: none;
+  .desctop-menu {
+    display: none; 
+  }
+
+  .mobile-menu { 
     border-top: 1px solid rgb(221,221,221);
     font-weight: 500;
-    font-size: 1em;
+    font-size: 1.4em;
     line-height: 40px;
-    text-align: center;
+    text-align: center;     
   }
 
-  .menu ul {
-    flex-direction: column;
+  .mobile-menu ul {
     padding: 25px 0;
   }
 
+  .mobile-menu .header-callback {
+    display: none;
+  }
+
   .header-callback .callback-number {
-    font-size: 14px;
-    color: rgb(119,119,140);
+    font-size: 18px;
   }
 
   .header-callback .callback-logo {
@@ -1494,6 +1496,7 @@ button[type='submit']:hover .icon-cellphone svg path {
   .header-callback .callback-logo:hover {
     background: url(../assets/icons/call-hover.png) 100% 50% / 30px 30px no-repeat;
   }
+
 
   .intro-text {
     top: calc((100% - 188px) / 2);
@@ -1519,11 +1522,9 @@ button[type='submit']:hover .icon-cellphone svg path {
   .product-item__info {
     padding-top: 0;
   }
-
   .product-item__info h1 {
     font-size: 30px;
   }
-
   .product-item__info p {
     padding-top: 15px;
     font-size: 14px;
@@ -1624,13 +1625,10 @@ button[type='submit']:hover .icon-cellphone svg path {
   .footer-adress {
     display: none;
   }
-  
+    
 }
 
 @media (max-width: 719px) {
-   .header-block {
-    padding-bottom: 0;
-  }
 
   .croner-logo {
     height: 20px;
@@ -1639,57 +1637,68 @@ button[type='submit']:hover .icon-cellphone svg path {
 
   .header-nav {
     text-align: right;
-    margin-top: 30px;
   }
 
-  .header-callback .callback-number {
-    color: rgb(119,119,140);
-    font-size: 14px;
+  .header-callback {
+    display: none;
   }
 
   .button-toggle { 
     align-items: center;
     display: flex;
     justify-content: flex-end;
-    flex-direction: row-reverse;
-    padding-right: 15px;
   }
 
-  .menu {
+  .desctop-menu {
     display: none;
   }
 
-  .menu { 
+  .mobile-menu { 
     border-top: 1px solid rgb(221,221,221);
     color: rgb(119,119,140);
     font-weight: 500;
-    font-size: 1em;
+    font-size: 1.4em;
     line-height: 40px;
     text-align: center;     
   }
 
-  .menu ul {
-    flex-direction: column;
+  .mobile-menu ul {
     padding: 25px 0;
   }
 
-  .menu li:hover {
+  .mobile-menu li:hover {
     color: rgb(57,191,162);
   }
 
-  .menu .callback-logo {
+  .mobile-menu li:nth-child(3),
+  .mobile-menu li:nth-child(4) {
+    display: none;
+  }
+
+  .mobile-menu .header-callback {
+    display: block;
+    padding-bottom: 25px;
+  }
+
+  .mobile-menu .header-callback a {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .mobile-menu .callback-logo {
     background: url(../assets/icons/call.png) 100% 50% / 30px 30px no-repeat;
     height: 30px;
+    margin-bottom: 20px;
     width: 30px;
   }
 
-  .menu .callback-logo:hover {
+  .mobile-menu .callback-logo:hover {
     background: url(../assets/icons/call-hover.png) 100% 50% / 30px 30px no-repeat;
   }
 
-  .menu .callback-number {
+  .mobile-menu .callback-number {
     font-size: 14px;
-    margin-right: 10px;
+    margin-right: 0;
   }
 
   .visual-block {
