@@ -242,12 +242,14 @@ button:focus{
 }
 
 .outline-white:hover {
-  background-color: rgb(117,112,255);
+  background-color: rgb(255,255,255);
   border: none;
+  color: rgb(117,112,255);
 }
 
 .outline-white:active {
-  background-color: rgb(81,77,178);
+  background-color: rgb(255,255,255);
+  color: rgb(57,191,162);
 }
 
 .outline-green {
@@ -275,11 +277,11 @@ button:focus{
 }
 
 .filled-light-blue:hover {
-  background-color: rgb(100,95,223);
+  background-color: rgb(57,191,162);
 }
 
 .filled-light-blue:active {
-  background-color: rgb(81,77,178);
+  background-color: rgb(45,179,143);
 }
 
 .action-link {
@@ -421,6 +423,9 @@ button:focus{
 }
 
 /* Menu toggle styling*/
+.open {
+  display: block;
+}
 .button-toggle {
   display: none;
 }
@@ -569,14 +574,13 @@ button:focus{
 }
 
 .products-item__buttons {
+  align-items: center;
   display: flex;
-  justify-content: space-between;
   padding-top: 30px;
 }
 
 .products-item__buttons .action-link {
   font: normal normal 16px/1.5 'Montserrat', Arial, Helvetica, sans-serif;
-  margin-bottom: 12px;
   margin-right: 22px;
 }
 
