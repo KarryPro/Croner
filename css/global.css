@@ -451,7 +451,6 @@ button:focus{
 }
 
 .toggle.line_1 {
-          -webkit-transform: rotate(45deg);
                   transform: rotate(45deg);
 }
 
@@ -461,7 +460,6 @@ button:focus{
 }
 
 .toggle.line_3 {
-          -webkit-transform: rotate(-45deg);
                   transform: rotate(-45deg);
 }
 
@@ -1071,8 +1069,7 @@ button:focus{
 
 .feedback-person img.image-rounded {
   border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 100px;
   width: 100px;
 }
