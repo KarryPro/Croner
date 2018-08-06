@@ -43,10 +43,7 @@
   .owl-carousel .owl-nav .owl-next,
   .owl-carousel .owl-dot {
     cursor: pointer;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none; 
+    user-select: none; 
   }
   .owl-carousel .owl-nav button.owl-prev,
   .owl-carousel .owl-nav button.owl-next,
@@ -90,7 +87,6 @@
   }
   .owl-carousel.owl-grab {
     cursor: move;
-    cursor: -webkit-grab;
     cursor: grab; 
   }
   .owl-carousel.owl-rtl {
@@ -109,10 +105,8 @@
  *  Owl Carousel - Animate Plugin
  */
 .owl-carousel .animated {
-          -webkit-animation-duration: 1000ms;
-                  animation-duration: 1000ms;
-          -webkit-animation-fill-mode: both;
-                  animation-fill-mode: both; 
+  animation-duration: 1000ms;
+  animation-fill-mode: both; 
 }
 
 .owl-carousel .owl-animated-in {
@@ -124,8 +118,7 @@
 }
 
 .owl-carousel .fadeOut {
-  -webkit-animation-name: fadeOut;
-          animation-name: fadeOut; 
+   animation-name: fadeOut; 
 }
 
 @-webkit-keyframes fadeOut {
@@ -158,7 +151,6 @@
     max-height: 0; 
   }
   .owl-carousel .owl-item img.owl-lazy {
-            -webkit-transform-style: preserve-3d;
                     transform-style: preserve-3d; 
   }
 
@@ -185,11 +177,10 @@
   z-index: 1;
   transition: -webkit-transform 100ms ease;
   transition: transform 100ms ease;
-  transition: transform 100ms ease, -webkit-transform 100ms ease; 
+  transition: transform 100ms ease; 
 }
 
 .owl-carousel .owl-video-play-icon:hover {
-          -webkit-transform: scale(1.3, 1.3);
                   transform: scale(1.3, 1.3); 
 }
 
