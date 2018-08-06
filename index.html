@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-<meta charset=utf-8 content=text/html>
+<meta charset=utf-8>
 <meta name=viewport content="width=device-width, initial-scale=1">
 <title>Croner | Customer Relationship CRM-System</title>
 <link rel=stylesheet href=css/screen.css>
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.png" type="image/png">
+<link rel="icon" href="favicon.png" type="image/png">
 </head>
 <body id=home>
 <header id=header>
@@ -70,11 +70,11 @@
 <section class=intro id=intro>
 <div class=visual-block>
 <div class=intro-text>
-<hgroup>
+<div class=intro-block>
 <h1>Платформа<br> для интернет-магазина</h1>
 <h2>автоматизация рабочих процессов<br>
 для малого и среднего бизнеса</h2>
-</hgroup>
+</div>
 <div class=intro-buttons>
 <button class="button outline-white">Попробовать</button>
 <button class="button filled-light-blue">Купить</button>
@@ -130,7 +130,7 @@
 </div>
 </div>
 </section>
-<section class=faq id=faq>
+<div class=faq id=faq>
 <div class=faq-list>
 <div class=container>
 <ol class="entry-list row">
@@ -174,7 +174,7 @@
 </ol>
 </div>
 </div>
-</section>
+</div>
 <section class="stats container" id=stats>
 <h1 class=section-header>Статистика</h1>
 <div class="stats-block row">
@@ -444,10 +444,10 @@ first@croner.com</p>
 <p>Заполните форму обратной связи<br> и мы перезвоним вам в течение 30 мин.</p>
 <div class=callback-block>
 <div class=callback-form>
-<form action method id=form class=form>
+<form action=/ method="get" id=form class=form>
 <div class=form-item>
 <label for=firstname>как к вам обратиться?</label>
-<input type=text name=firstname id=first-name placeholder=Владислав required>
+<input type=text name=firstname id=firstname placeholder=Владислав required>
 </div>
 <div class=form-item>
 <label for=phone>ваш номер телефона</label>
@@ -457,7 +457,7 @@ first@croner.com</p>
 <button type=submit form=form value=Submit class=button-lg>
 <span class=icon-cellphone>
 <svg xmlns=http://www.w3.org/2000/svg width=14.125 height=14.125 viewBox="0 0 14.125 14.125">
-<path fill=#6060f4 fill-rule=evenodd id=cellphone data-name= class=cellphone d=M25.137,22.028a0.513,0.513,0,0,0-.03-0.211,1.775,1.775,0,0,0-.763-0.532c-0.572-.321-1.155-0.633-1.717-0.964a2.065,2.065,0,0,0-.893-0.462c-0.613,0-1.506,1.817-2.048,1.817a2.158,2.158,0,0,1-.863-0.392,9.99,9.99,0,0,1-4.107-4.107,2.158,2.158,0,0,1-.392-0.863c0-.542,1.817-1.436,1.817-2.048a2.065,2.065,0,0,0-.462-0.893c-0.331-.562-0.643-1.145-0.964-1.717a1.775,1.775,0,0,0-.532-0.763,0.513,0.513,0,0,0-.211-0.03,4.468,4.468,0,0,0-1.4.311A2.646,2.646,0,0,0,11.512,12.4,3.837,3.837,0,0,0,11,14.267a7.732,7.732,0,0,0,.693,2.631,9.391,9.391,0,0,0,.833,1.757,16.951,16.951,0,0,0,4.819,4.819,9.391,9.391,0,0,0,1.757.833A7.732,7.732,0,0,0,21.733,25a3.837,3.837,0,0,0,1.867-.512,2.646,2.646,0,0,0,1.225-1.064A4.468,4.468,0,0,0,25.137,22.028Z transform="translate(-11 -10.875)"/>
+<path fill=#6060f4 fill-rule=evenodd id=cellphone class=cellphone d=M25.137,22.028a0.513,0.513,0,0,0-.03-0.211,1.775,1.775,0,0,0-.763-0.532c-0.572-.321-1.155-0.633-1.717-0.964a2.065,2.065,0,0,0-.893-0.462c-0.613,0-1.506,1.817-2.048,1.817a2.158,2.158,0,0,1-.863-0.392,9.99,9.99,0,0,1-4.107-4.107,2.158,2.158,0,0,1-.392-0.863c0-.542,1.817-1.436,1.817-2.048a2.065,2.065,0,0,0-.462-0.893c-0.331-.562-0.643-1.145-0.964-1.717a1.775,1.775,0,0,0-.532-0.763,0.513,0.513,0,0,0-.211-0.03,4.468,4.468,0,0,0-1.4.311A2.646,2.646,0,0,0,11.512,12.4,3.837,3.837,0,0,0,11,14.267a7.732,7.732,0,0,0,.693,2.631,9.391,9.391,0,0,0,.833,1.757,16.951,16.951,0,0,0,4.819,4.819,9.391,9.391,0,0,0,1.757.833A7.732,7.732,0,0,0,21.733,25a3.837,3.837,0,0,0,1.867-.512,2.646,2.646,0,0,0,1.225-1.064A4.468,4.468,0,0,0,25.137,22.028Z transform="translate(-11 -10.875)"/>
 </svg>
 </span>Оставить заявку
 </button>
