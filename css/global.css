@@ -80,19 +80,15 @@ li {
 }
 
 input::-webkit-input-placeholder {
-  color: rgba(255,255,255, 0.3);
-}
-
-input:-ms-input-placeholder {
-  color: rgba(255,255,255, 0.3);
+  color: rgba(255,255,255, 0.3) !important;
 }
 
 input::-ms-input-placeholder {
-  color: rgba(255,255,255, 0.3);
+  color: rgba(255,255,255, 0.3) !important;
 }
 
 input::placeholder {
-  color: rgba(255,255,255, 0.3);
+  color: rgba(255,255,255, 0.3) !important;
 }
 
 /*=== TYPOGRAPHY ===*/
